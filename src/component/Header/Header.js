@@ -5,7 +5,7 @@ const Header = () => {
         <div className="header">
             <h1>Make a Programmer team</h1>
             <p>Programmer are very intelligence person .The also make intelligence a device!</p>
-            <h3>Total Budget 5000000 tk</h3>
+            <h3>Total Budget 50000000 tk</h3>
         </div>
     );
 };

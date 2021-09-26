@@ -12,7 +12,7 @@ const Cart = (props) => {
         <div className="cart-text">
             <h3>Programmer : {cart.length}</h3>
             <small>You add 5 programmers only!!</small>
-            <p><strong>Total cost</strong> :{totalCost}</p>
+            <p><strong>Total cost</strong> :{totalCost} tk</p>
             <div>
             {
                 cart.map(p=><p className="hire">{p.name}</p>)

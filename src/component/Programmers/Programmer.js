@@ -13,7 +13,7 @@ const Programmer = (props) => {
             <p>Nationality: {nationity}</p>
              <p><small>Age       :{age}</small></p>
             <p>Lanuage :{language}</p>
-            <p>Salary       :{salary}</p>
+            <p>Salary       :{salary} tk</p>
             </div>
             <button onClick={()=>props.handleCart(props.programmer)}>{shoppingCartIcon} Buy Now</button>
         </div>
