@@ -3,13 +3,16 @@ import Cart from '../Cart/Cart';
 import Programmer from '../Programmers/Programmer';
 import "./Programmercontainer.css"
 const ProgrammerContainer = () => {
+    //load programmers data
     const [programmers,setProgrammers]=useState([])
+    //cart data
     const [cart,setCart]=useState([])
     useEffect(()=>{
         fetch('./data.JSON')
         .then(res=>res.json())
         .then(data=>setProgrammers(data))
     },[])
+    //call event handler
     const handleCart=(programmer)=>{
         const t=cart.filter(p=>p.name===programmer.name)
         if(t.length===0 && cart.length<=4){
